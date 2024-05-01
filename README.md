@@ -1,7 +1,7 @@
 ```markdown
 # RandomizeX
 
-RandomizeX is a TypeScript library for generating random data such as strings, numbers, email addresses, phone numbers, dates, booleans, IP addresses, colors, credit card numbers, boolean arrays, and integer arrays.
+RandomizeX is a JavaScript/TypeScript library for generating random data such as strings, numbers, email addresses, phone numbers, dates, booleans, IP addresses, colors, credit card numbers, boolean arrays, and integer arrays.
 
 ## Installation
 

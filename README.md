@@ -15,43 +15,43 @@ npm install randomizex
 
 import { RandomizeX } from 'randomizex';
 
-// Generate a random ID
+1. Generate a random ID
 const id = RandomizeX.randomizeId(); // Default length is 16
 
-// Generate a random sentence
+2. Generate a random sentence
 const sentence = RandomizeX.randomizeSentence(); // Default length is 6 words
 
-// Generate a random number between 0 and 100
+3. Generate a random number between 0 and 100
 const number = RandomizeX.randomizeNumber(); // Default min is 0, max is 100
 
-// Generate a random email address
+4. Generate a random email address
 const email = RandomizeX.randomizeEmail();
 
-// Generate a random boolean value
+5. Generate a random boolean value
 const bool = RandomizeX.randomizeBoolean();
 
-// Generate a random date between January 1, 2000 and the current date
+6. Generate a random date between January 1, 2000 and the current date
 const date = RandomizeX.randomizeDate();
 
-// Generate a random phone number
+7. Generate a random phone number
 const phoneNumber = RandomizeX.randomizePhoneNumber();
 
-// Generate a random IP address
+8. Generate a random IP address
 const ipAddress = RandomizeX.randomizeIpAddress();
 
-// Generate a random URL
+9. Generate a random URL
 const url = RandomizeX.randomizeUrl();
 
-// Generate a random color
+10. Generate a random color
 const color = RandomizeX.randomizeColor();
 
-// Generate a random credit card number
+11. Generate a random credit card number
 const creditCardNumber = RandomizeX.randomizeCreditCardNumber();
 
-// Generate an array of 5 random boolean values
+12. Generate an array of 5 random boolean values
 const boolArray = RandomizeX.randomizeBooleanArray();
 
-// Generate an array of 5 random integers between 0 and 100
+13. Generate an array of 5 random integers between 0 and 100
 const intArray = RandomizeX.randomizeIntArray();
 
 

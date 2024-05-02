@@ -1,7 +1,5 @@
-```markdown
-# RandomizeX
 
-RandomizeX is a JavaScript/TypeScript library for generating random data such as strings, numbers, email addresses, phone numbers, dates, booleans, IP addresses, colors, credit card numbers, boolean arrays, and integer arrays.
+# RandomizeX
 
 ## Installation
 
@@ -11,62 +9,366 @@ You can install RandomizeX via npm:
 npm install randomizex
 ```
 
+### Using RandomizeX with JavaScript/TypeScript Modules (`type: module`)
+
+#### Usage
+
+```JavaScript
+// Import RandomizeX functions
+import { Id, Sentence, Number } from 'randomizex';
+
+// Use the functions
+const randomId = Id();
+const randomSentence = Sentence();
+const randomNumber = Number();
+```
+
+### Using RandomizeX with CommonJS Modules (`type: commonjs`)
+
+#### Usage
+
+```javascript
+// Require RandomizeX functions
+const { Id, Sentence, Number } = require('randomizex');
+
+// Use the functions
+const randomId = Id();
+const randomSentence = Sentence();
+const randomNumber = Number();
+```
+
+### Note:
+
+- When using JavaScript/TypeScript with `type: module`, you can directly import the functions from RandomizeX.
+- When using CommonJS, you need to use `require` to import the functions.
+- Ensure your `tsconfig.json` is configured correctly for the module type you're using.
+
+
 ## Usage
+
+Once installed, you can import RandomizeX into your JavaScript/JavaScript/TypeScript code and start using its functions:
+
+```javascript
 
 import { RandomizeX } from 'randomizex';
 
-1. Generate a random ID
-const id = RandomizeX.randomizeId(); // Default length is 16
+// Generate a random string with a length of 16 characters
 
-2. Generate a random sentence
-const sentence = RandomizeX.randomizeSentence(); // Default length is 6 words
+const randomString = RandomizeX.Id();
 
-3. Generate a random number between 0 and 100
-const number = RandomizeX.randomizeNumber(); // Default min is 0, max is 100
+console.log(randomString); // Output: e.g., "a3Fg-5hRt-8kLp-..."
 
-4. Generate a random email address
-const email = RandomizeX.randomizeEmail();
 
-5. Generate a random boolean value
-const bool = RandomizeX.randomizeBoolean();
 
-6. Generate a random date between January 1, 2000 and the current date
-const date = RandomizeX.randomizeDate();
+// Generate a random sentence with 6 words
 
-7. Generate a random phone number
-const phoneNumber = RandomizeX.randomizePhoneNumber();
+const randomSentence = RandomizeX.Sentence();
 
-8. Generate a random IP address
-const ipAddress = RandomizeX.randomizeIpAddress();
+console.log(randomSentence); // Output: e.g., "Lorem ipsum dolor sit amet."
 
-9. Generate a random URL
-const url = RandomizeX.randomizeUrl();
 
-10. Generate a random color
-const color = RandomizeX.randomizeColor();
 
-11. Generate a random credit card number
-const creditCardNumber = RandomizeX.randomizeCreditCardNumber();
+// Generate a random number between 0 and 100 (inclusive)
 
-12. Generate an array of 5 random boolean values
-const boolArray = RandomizeX.randomizeBooleanArray();
+const randomNumber = RandomizeX.Number();
 
-13. Generate an array of 5 random integers between 0 and 100
-const intArray = RandomizeX.randomizeIntArray();
+console.log(randomNumber); // Output: e.g., 42
+
+
+
+// Generate a random email address
+
+const randomEmail = RandomizeX.Email();
+
+console.log(randomEmail); // Output: e.g., "example@example.com"
+
+
+
+// Generate a random boolean value (true or false)
+
+const randomBoolean = RandomizeX.Boolean();
+
+console.log(randomBoolean); // Output: e.g., true
+
+
+
+// Generate a random date between January 1, 2000, and the current date
+
+const randomDate = RandomizeX.Date();
+
+console.log(randomDate); // Output: e.g., "Sat Jun 10 2006 02:04:32 GMT+0300 (East Africa Time)"
+
+
+
+// Generate a random phone number
+
+const randomPhoneNumber = RandomizeX.PhoneNumber();
+
+console.log(randomPhoneNumber); // Output: e.g., "+123-456-7890"
+
+
+
+// Generate a random IP address
+
+const randomIpAddress = RandomizeX.IpAddress();
+
+console.log(randomIpAddress); // Output: e.g., "192.168.1.1"
+
+
+
+// Generate a random URL
+
+const randomUrl = RandomizeX.Url();
+
+console.log(randomUrl); // Output: e.g., "http://example.com/some/path"
+
+
+
+// Generate a random color in hexadecimal format
+
+const randomColor = RandomizeX.Color();
+
+console.log(randomColor); // Output: e.g., "#1a2b3c"
+
+
+
+// Generate a random credit card number
+
+const randomCreditCardNumber = RandomizeX.CreditCardNumber();
+
+console.log(randomCreditCardNumber); // Output: e.g., "4916577212820895"
+
+
+
+// Generate an array of 5 random boolean values
+
+const randomBooleanArray = RandomizeX.BooleanArray();
+
+console.log(randomBooleanArray); // Output: e.g., [true, false, true, true, false]
+
+
+
+// Generate an array of 5 random integers between 0 and 100
+
+const randomIntArray = RandomizeX.IntArray();
+
+console.log(randomIntArray); // Output: e.g., [42, 15, 73, 91, 5]
+
+
+
+// Select a random element from an array
+
+const randomElement = RandomizeX.Element(['apple', 'banana', 'orange']);
+
+console.log(randomElement); // Output: e.g., "banana"
+
+
+
+// Generate a random boolean value with a specific probability (e.g., 70%)
+
+const randomWithProbability = RandomizeX.BooleanWithProbability(0.7);
+
+console.log(randomWithProbability); // Output: e.g., true
+
+
+
+// Generate a custom string with a specified length and character set
+
+const customString = RandomizeX.String(10, 'abcdefghijklmnopqrstuvwxyz');
+
+console.log(customString); // Output: e.g., "hjkldsfqwe"
+
+
+
+// Generate a random date within a specified date range
+
+const randomDateInRange = RandomizeX.DateInRange(new Date(2023, 1, 1), new Date(2023, 12, 31));
+
+console.log(randomDateInRange); // Output: e.g., "Wed Jul 05 2023 07:25:13 GMT+0300 (East Africa Time)"
+
+
+
+// Generate a random time in HH:MM:SS format
+
+const randomTime = RandomizeX.Time();
+
+console.log(randomTime); // Output: e.g., "15:23:47"
+
+
+
+// Generate a random filename with a specified extension
+
+const randomFilename = RandomizeX.FileName('txt');
+
+console.log(randomFilename); // Output: e.g., "abcde12345.txt"
+
+
+
+// Generate a random hexadecimal color code with a leading # symbol
+
+const randomHexColor = RandomizeX.HexColor();
+
+console.log(randomHexColor); // Output: e.g., "#1a2b3c"
+
+
+
+// Generate a random IPv6 address
+
+const randomIPv6Address = RandomizeX.IPv6Address();
+
+console.log(randomIPv6Address); // Output: e.g., "2001:0db8:85a3:0000:0000:8a2e:0370:7334"
+
+
+
+// Generate a random MAC address
+
+const randomMACAddress = RandomizeX.MACAddress();
+
+console.log(randomMACAddress); // Output: e.g., "fa:24:25:d4:95:71"
+
+
+
+// Generate a random GUID (Globally Unique Identifier)
+
+const randomGUID = RandomizeX.GUID();
+
+console.log(randomGUID); // Output: e.g., "46d205e8-35a8-4fae-89c7-c33b3988a9f6"
+
+
+
+// Generate a random currency code
+
+const randomCurrency = RandomizeX.Currency();
+
+console.log(randomCurrency); // Output: e.g., "USD"
+
+
+
+// Generate a random country name
+
+const randomCountry = RandomizeX.Country();
+
+console.log(randomCountry); // Output: e.g., "France"
+
+
+
+// Generate a random city name
+
+const randomCity = RandomizeX.City();
+
+console.log(randomCity); // Output: e.g., "Paris"
+
+
+
+// Generate a random street address
+
+const randomStreetAddress = RandomizeX.StreetAddress();
+
+console.log(randomStreetAddress); // Output: e.g., "123 Main Street"
+
+
+
+// Generate a random postal code
+
+const randomPostalCode = RandomizeX.PostalCode();
+
+console.log(randomPostalCode); // Output: e.g., "12345"
+
+
+
+// Generate a random latitude value between -90 and 90
+
+const randomLatitude = RandomizeX.Latitude();
+
+console.log(randomLatitude); // Output: e.g., -12.345678
+
+
+
+// Generate a random longitude value between -180 and 180
+
+const randomLongitude = RandomizeX.Longitude();
+
+console.log(randomLongitude); // Output: e.g., 45.678901
+
+
+
+// Generate a random HTTP method (e.g., GET, POST, PUT, etc.)
+
+const randomHttpMethod = RandomizeX.HttpMethod();
+
+console.log(randomHttpMethod); // Output: e.g., "GET"
+
+
+
+// Generate a random MIME type (e.g., application/json, text/plain, etc.)
+
+const randomMimeType = RandomizeX.MimeType();
+
+console.log(randomMimeType); // Output: e.g., "image/jpeg"
+
+```
+
 
 
 ## Features
-- `randomizeId(length: number = 16): string`: Generates a random string of the specified length.
-- `randomizeSentence(sentenceLength: number = 6): string`: Generates a random sentence of the specified length.
-- `randomizeNumber(min: number = 0, max: number = 100): number`: Generates a random number within the specified range.
-- `randomizeEmail(): string`: Generates a random email address.
-- `randomizeBoolean(): boolean`: Generates a random boolean value.
-- `randomizeDate(start: Date = new Date(2000, 0, 1), end: Date = new Date()): Date`: Generates a random date within the specified range.
-- `randomizePhoneNumber(): string`: Generates a random phone number.
-- `randomizeIpAddress(): string`: Generates a random IP address.
-- `randomizeUrl(): string`: Generates a random URL.
-- `randomizeColor(): string`: Generates a random color code.
-- `randomizeCreditCardNumber(): string`: Generates a random credit card number.
-- `randomizeBooleanArray(length: number = 5): boolean[]`: Generates an array of random boolean values.
-- `randomizeIntArray(length: number = 5, min: number = 0, max: number = 100): number[]`: Generates an array of random integers within the specified range.
 
+
+- Generates random strings, numbers, dates, email addresses, phone numbers, IP addresses, URLs, colors, credit card numbers, booleans, arrays, and more.
+
+- Provides functions for custom string generation with specified lengths and character sets.
+
+- Offers the ability to generate random dates within a specified range.
+
+- Generates random times in HH:MM:SS format.
+
+- Creates random filenames with specified extensions.
+
+- Generates hexadecimal color codes with and without a leading # symbol.
+
+- Produces random IPv6 and MAC addresses.
+
+- Creates random GUIDs (Globally Unique Identifiers).
+
+- Provides random currency and country codes.
+
+- Generates random city and street address names.
+
+- Creates random postal codes.
+
+- Produces random latitude and longitude values.
+
+- Generates random HTTP methods.
+
+- Provides random MIME types.
+
+
+## Contributing
+
+We welcome contributions to RandomizeX. If you have any suggestions or improvements, please feel free to create a pull request.
+
+## License
+
+This library is licensed under the MIT License. For more information, please see the LICENSE file.
+
+```
+
+
+```markdown
+
+## Contributing
+
+We welcome contributions to RandomizeX. If you have any suggestions or improvements, please feel free to create a pull request.
+
+## License
+
+This library is licensed under the MIT License. For more information, please see the LICENSE file.
+
+## About
+
+RandomizeX is developed and maintained by Ali Asghar Gill. It was created to provide a simple and versatile way to generate random data in JavaScript and JavaScript/TypeScript applications.
+
+If you have any questions, feedback, or suggestions, please don't hesitate to reach out to us at stylinalivlgs@gmail.com 
+
+Thank you for using RandomizeX!
+
+```

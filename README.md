@@ -1,5 +1,5 @@
-
 # RandomizeX
+You're in the right place! Just install the **RandomizeX** package to solve all your problems.
 
 ## Installation
 
@@ -15,12 +15,12 @@ npm install randomizex
 
 ```JavaScript
 // Import RandomizeX functions
-import { Id, Sentence, Number } from 'randomizex';
+import { RandomizeX } from 'randomizex';
 
 // Use the functions
-const randomId = Id();
-const randomSentence = Sentence();
-const randomNumber = Number();
+const randomId = RandomizeX.Id();
+const randomSentence = RandomizeX.Sentence();
+const randomNumber = RandomizeX.Number();
 ```
 
 ### Using RandomizeX with CommonJS Modules (`type: commonjs`)
@@ -29,12 +29,12 @@ const randomNumber = Number();
 
 ```javascript
 // Require RandomizeX functions
-const { Id, Sentence, Number } = require('randomizex');
+const {RandomizeX } = require('randomizex');
 
 // Use the functions
-const randomId = Id();
-const randomSentence = Sentence();
-const randomNumber = Number();
+const randomId = RandomizeX.Id();
+const randomSentence = RandomizeX.Sentence();
+const randomNumber = RandomizeX.Number();
 ```
 
 ### Note:
@@ -47,6 +47,8 @@ const randomNumber = Number();
 ## Usage
 
 Once installed, you can import RandomizeX into your JavaScript/JavaScript/TypeScript code and start using its functions:
+
+**More Then 130+ Functionalities**
 
 ```javascript
 
@@ -306,7 +308,10 @@ const randomMimeType = RandomizeX.MimeType();
 
 console.log(randomMimeType); // Output: e.g., "image/jpeg"
 
+
 ```
+ **100+ more methods...**
+
 
 
 
@@ -350,24 +355,18 @@ We welcome contributions to RandomizeX. If you have any suggestions or improveme
 
 This library is licensed under the MIT License. For more information, please see the LICENSE file.
 
-```
-
-
-```markdown
-
-## Contributing
-
-We welcome contributions to RandomizeX. If you have any suggestions or improvements, please feel free to create a pull request.
-
-## License
-
-This library is licensed under the MIT License. For more information, please see the LICENSE file.
-
 ## About
 
-RandomizeX is developed and maintained by Ali Asghar Gill. It was created to provide a simple and versatile way to generate random data in JavaScript and JavaScript/TypeScript applications.
+RandomizeX is developed and maintained by **Ali Asghar Gill**. It was created to provide a
+simple and versatile way to generate random data in JavaScript and JavaScript/TypeScript 
+applications.
 
-If you have any questions, feedback, or suggestions, please don't hesitate to reach out to us at stylinalivlgs@gmail.com 
+If you have any questions, feedback, or suggestions, please don't hesitate to reach out to
+us at the following email.
+
+```sh
+stylinalivlogs@gmail.com 
+```
 
 Thank you for using RandomizeX!
 

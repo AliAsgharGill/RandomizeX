@@ -1,5 +1,5 @@
 # RandomizeX
-You're in the right place! Just install the **RandomizeX** package to solve all your problems.
+You're in the right place! Just install the **RandomizeX** package to solve all your problems related to generating random data.
 
 ## Installation
 

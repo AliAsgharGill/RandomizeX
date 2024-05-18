@@ -1,7 +1,7 @@
 {
   "name": "randomizex",
   "version": "1.0.13",
-  "description": "Generate Random UUID, Id, Number, Password, String, Boolean, Array Shuffle, Array Pick, Date Generation, Hex Values and more.",
+  "description": "Generate Random UUID, Id, Number, Password, String Creation, Boolean Values, Array Shuffle, Array Pick, Date Generation, Hex Values and more.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -62,7 +62,8 @@
     " Random data API",
     " Randomization package",
     " JavaScript randomizer",
-    " Random data creation utility"
+    " Random data creation utility",
+    "Generate Random UUID", "RandomIdNumber", "Random Password", " Random String Creation", "Random Boolean Values", "Random Array Shuffle", "Random Array", "Random Date Generation", "Random Hex Values" 
   ],
   "author": "Ali Asghar Gill",
   "license": "MIT",
